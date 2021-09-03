@@ -22,7 +22,6 @@ class FfmpegJoin < Formula
 
   def install
     bin.install "ffmpeg_join"
-		mv bin/"ffmpeg_join", bin/"ffmpeg_join"
   end
 
   def caveats
