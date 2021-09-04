@@ -1,5 +1,5 @@
 class FfmpegJoin < Formula
-  VERSION_NUM = '0.0.3'
+  VERSION_NUM = '0.0.6'
   BASE_URL = 'https://github.com/ryanfox1985/ffmpeg_join/releases/download'
   desc "FfmpegJoin is a tool to be able to join videos using ffmpeg."
   homepage "https://github.com/ryanfox1985/ffmpeg_join"
@@ -8,14 +8,14 @@ class FfmpegJoin < Formula
   if OS.linux?
     if Hardware::CPU.is_64_bit?
       url "#{BASE_URL}/#{VERSION_NUM}/ffmpeg_join-#{VERSION_NUM}-linux-amd64.tar.gz"
-      sha256 "5693d7837e3f72ccff1acf2e2ea6f2342e50f36a07ffb10e85ac7e2d6e5507a2"
+      sha256 "e5004a68459b3b16b8412908fc5859d469d72b85c97ca2e76cddad2910b78217"
 		else
       url "#{BASE_URL}/#{VERSION_NUM}/ffmpeg_join-#{VERSION_NUM}-linux-386.tar.gz"
-      sha256 "659ed4af693a38a2c582415b4f3989a950a6a1122adca553327065c8032acf77"
+      sha256 "42d1f01a0f15d9cccfaa2a32935c5829893d556745f413c94a0f71144e96abd8"
 		end
   else
     url "#{BASE_URL}/#{VERSION_NUM}/ffmpeg_join-#{VERSION_NUM}-darwin-amd64.tar.gz"
-    sha256 "fa03cb28f9821fe35f9a512ed9f7ca9c05b9630a5e91591b5c177f23addeff9f"
+    sha256 "660b06bffc017444acd217128ddf52e40a9e0cbf59352e0a2438fb01472b6d0a"
   end
 
   depends_on :arch => :intel
